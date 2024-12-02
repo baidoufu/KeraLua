@@ -411,7 +411,7 @@ namespace KeraLua
         [DllImport(LuaLibraryName, CallingConvention = CallingConvention.Cdecl)]
         internal static extern int luaL_ref(lua_State luaState, int registryIndex);
 
-        [DllImport(LuaLibraryName, CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Ansi)]
+        [DllImport(LuaLibraryName, CallingConvention = CallingConvention.Cdecl, CharSet = CharSet.Unicode)]
         internal static extern void luaL_requiref(lua_State luaState, string moduleName, lua_CFunction openFunction, int global);
 
         [DllImport(LuaLibraryName, CallingConvention = CallingConvention.Cdecl)]
